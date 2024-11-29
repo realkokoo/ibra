@@ -1,0 +1,103 @@
+/* Import classy serif font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+/* General body styling with background image */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif; /* Classic serif font for a luxurious look */
+    background: url('bg2.png') no-repeat center center fixed; /* Background image added */
+    background-size: cover; /* Cover entire background */
+    color: #ffffff;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login container styling */
+.login-container {
+    background-color: rgba(64, 0, 0, 0.9); /* Slightly darker shade for the form background with transparency */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 350px;
+}
+
+/* Logo styling in the login container */
+.logo img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+/* Heading */
+h2 {
+    margin-bottom: 20px;
+    color: #d4af37; /* Gold color for the heading */
+}
+
+/* Input group styling */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #d4af37; /* Gold border for input fields */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Button group styling for login and cancel buttons */
+.button-group {
+    display: flex;
+    justify-content: center; /* Center both buttons */
+    align-items: center;
+    gap: 20px; /* Space between the buttons */
+}
+
+/* Login button styling */
+.button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #d4af37; /* Gold color for buttons */
+    color: #400000; /* Darker text color for contrast */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+/* Specific styling for the cancel button */
+.cancel-button {
+    background-color: #5c0000; /* Deep burgundy red color for the cancel button */
+    color: #ffffff; /* White text for contrast */
+}
+
+.cancel-button:hover {
+    background-color: #400000; /* Darker burgundy on hover */
+}
+
+/* Hover effect for all buttons */
+.button:hover {
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Error message styling */
+.error-message {
+    color: #ff6666;
+    margin-top: 10px;
+    display: none; /* Initially hidden */
+}

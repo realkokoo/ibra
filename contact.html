@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Marsoliel</title>
+    <link rel="stylesheet" href="contact.css"> <!-- Corrected to contact.css -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script defer src="contact.js"></script>
+</head>
+<body>
+    <!-- Header - Same as Main Page -->
+    <div class="top-bar">
+        <a href="login.html" class="button login">Login</a> <!-- Login button on the top left -->
+
+        <!-- Logo in the center wrapped with a link to index.html -->
+        <div class="logo">
+            <a href="main.html">
+                <img src="logo.png" alt="Marsoliel Logo">
+            </a>
+        </div>
+
+        <!-- Right buttons -->
+        <div class="right-buttons">
+            <a href="contact.html" class="button" id="contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Contact Content with Map as Background -->
+    <div class="contact-content">
+        <div class="map-background">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233700.7117173385!2d58.01306039336281!3d23.762579565201417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e91ffde47ea3069%3A0x9debeff846efbd79!2sMarsoliel%20Perfumes!5e0!3m2!1sen!2som!4v1732458995470!5m2!1sen!2som" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact-overlay">
+            <h1>Contact Us</h1>
+            <p class="contact-intro">We are thrilled to connect with you. If you have any questions or need assistance, feel free to reach out.</p>
+        </div>
+    </div>
+
+    <!-- Contact Info Cards -->
+    <div class="contact-info-section">
+        <div class="contact-card">
+            <h3>Email Us</h3>
+            <p><a href="mailto:contact@marsoliel.om">contact@marsoliel.om</a></p>
+        </div>
+        <div class="contact-card">
+            <h3>Visit Us</h3>
+            <p>Al Araimi Boulevard, Seeb</p>
+        </div>
+        <div class="contact-card">
+            <h3>Call Us</h3>
+            <p><a href="tel:+96896177734">+968-96177734</a></p>
+        </div>
+    </div>
+
+    <!-- Feedback Form Section -->
+    <div class="feedback-section">
+        <h2>We Value Your Feedback</h2>
+        <form id="feedback-form">
+            <div class="input-group">
+                <label for="feedback">Your Feedback</label>
+                <textarea id="feedback" name="feedback" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="button">Submit Feedback</button>
+        </form>
+        <p class="confirmation-message" id="confirmation-message"></p>
+    </div>
+</body>
+</html>

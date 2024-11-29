@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Stock - Marsoliel Admin</title>
+    <link rel="stylesheet" href="view_stock.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script defer src="view_stock.js"></script> <!-- JavaScript for dynamic actions -->
+</head>
+<body>
+    <!-- Top bar (navbar) -->
+    <div class="top-bar">
+        <a href="admin.html" class="button return-button">Return to Admin Terminal</a>
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Marsoliel Logo">
+            </a>
+        </div>
+    </div>
+
+    <!-- Main content area -->
+    <div class="view-stock-content">
+        <h1>View Stock</h1>
+        <p class="view-stock-intro">Edit, update, or remove perfumes from Marsoliel's inventory:</p>
+
+        <div class="perfumes-list" id="perfumes-list">
+            <!-- Perfumes will be dynamically generated here using JavaScript -->
+        </div>
+
+        <!-- Edit Modal -->
+        <div id="edit-modal" class="edit-modal hidden">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div class="edit-inner">
+                    <h2>Edit Perfume</h2>
+                    <form id="edit-form">
+                        <div class="input-group">
+                            <label for="edit-name">Perfume Name:</label>
+                            <input type="text" id="edit-name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="edit-image">Perfume Image:</label>
+                            <input type="file" id="edit-image" accept="image/*">
+                            <div id="edit-image-preview"></div>
+                        </div>
+                        <div id="edit-sizes-container">
+                            <h3>Available Sizes:</h3>
+                            <div class="size-entry-label">
+                                <label>Size (mL)</label>
+                                <label>Price (OMR)</label>
+                            </div>
+                            <!-- Size entries will be dynamically added here -->
+                        </div>
+                        <div class="button-container">
+                            <button type="button" id="add-size-button" class="button add-size">Add Another Size</button>
+                            <button type="submit" class="button save-button">Save Changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modify Stock - Marsoliel Admin</title>
+    <link rel="stylesheet" href="modify_stock.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script defer src="modify_stock.js"></script>
+</head>
+<body>
+    <!-- Top bar (navbar) -->
+    <div class="top-bar">
+        <a href="admin.html" class="button return-button">Return to Admin Terminal</a> <!-- Button to return to admin -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Marsoliel Logo">
+            </a>
+        </div>
+    </div>
+
+    <!-- Main content for adding perfume -->
+    <div class="modify-stock-content">
+        <h1>Modify Stock</h1>
+        <p class="modify-intro">Add new perfumes to the Marsoliel inventory:</p>
+
+        <!-- Form to add a new perfume -->
+        <form id="add-perfume-form">
+            <div class="input-group">
+                <label for="perfume-name">Perfume Name:</label>
+                <input type="text" id="perfume-name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="perfume-image">Perfume Image:</label>
+                <input type="file" id="perfume-image" accept="image/*" required>
+                <div id="image-preview"></div> <!-- Image preview container -->
+            </div>
+
+            <div class="input-group">
+                <label for="perfume-type">Type:</label>
+                <select id="perfume-type" required>
+                    <option value="oud">Oud</option>
+                    <option value="perfume">Perfume</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="perfume-gender">Gender:</label>
+                <select id="perfume-gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="both">Both</option>
+                </select>
+            </div>
+
+            <div id="sizes-container">
+                <h3>Available Sizes:</h3>
+                <div class="size-entry">
+                    <input type="number" class="size-input" placeholder="Size (mL)" required>
+                    <input type="number" class="price-input" placeholder="Price (OMR)" required>
+                    <button type="button" class="remove-size-button">Remove</button>
+                </div>
+            </div>
+            <button type="button" id="add-size-button">Add Another Size</button>
+
+            <button type="submit" class="button add-button">Add Perfume</button>
+        </form>
+    </div>
+</body>
+</html>

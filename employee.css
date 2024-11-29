@@ -1,0 +1,118 @@
+/* Import classy serif font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+/* General body styling with background image */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif; /* Classic serif font for a luxurious look */
+    background: url('bg2.png') no-repeat center center fixed; /* Add background image */
+    background-size: cover; /* Make background cover the entire page */
+    color: #ffffff;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column; /* Stack the top bar and main content */
+}
+
+/* Top bar styling */
+.top-bar {
+    display: flex;
+    justify-content: space-between; /* Space between left, center, and right sections */
+    align-items: center;
+    padding: 15px 40px;
+    background-color: rgba(64, 0, 0, 0.9); /* Darker shade for the top bar with transparency */
+    position: relative; /* Needed to center logo properly */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for an elegant touch */
+}
+
+/* Logout button (top left) text only with classy effect */
+.button.logout {
+    background: none;
+    color: #d4af37; /* Gold color to match the logo */
+    border: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth color transition */
+}
+
+.button.logout:hover {
+    color: #f5d487; /* Softer gold for hover effect */
+    text-decoration: underline; /* Underline text on hover */
+}
+
+/* Right buttons (Add and Search) text only with classy effect */
+.right-buttons {
+    display: flex;
+    gap: 20px; /* Space between Add and Search buttons */
+}
+
+.button {
+    background: none;
+    color: #d4af37; /* Gold color to match the logo */
+    border: none;
+    padding: 15px 20px;
+    font-size: 18px; /* Bigger font size */
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth color transition */
+}
+
+.button:hover {
+    color: #f5d487; /* Softer gold for hover effect */
+    text-decoration: underline; /* Underline text on hover */
+}
+
+/* Logo styling in the top bar */
+.logo {
+    position: absolute;
+    left: 50%; /* Move to the horizontal center */
+    transform: translateX(-50%); /* Adjust for proper centering */
+}
+
+.logo img {
+    width: 220px; /* Slightly larger size for prestige */
+}
+
+/* Centered content container */
+.centered-content {
+    flex: 1; /* Takes up the remaining vertical space */
+    display: flex;
+    flex-direction: column; /* Stack the buttons */
+    align-items: center;
+    justify-content: center; /* Center vertically */
+}
+
+/* Main buttons styling */
+.buttons {
+    display: flex;
+    flex-direction: column; /* Align buttons vertically */
+    gap: 30px; /* Increased spacing between buttons */
+    margin-top: 30px;
+}
+
+.buttons .large-button {
+    font-size: 26px; /* Larger text for better usability */
+    padding: 30px 60px; /* Larger buttons for a more luxurious feel */
+    background-color: #5c0000; /* Deep burgundy (red) for buttons */
+    color: #ffffff; /* White text color for contrast */
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    cursor: pointer;
+    text-decoration: none; /* No underline for links */
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease; /* Smooth transitions */
+    text-align: center; /* Ensure text is centered in the button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons .large-button:hover {
+    transform: translateY(-5px); /* Lift button on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+    background-color: #400000; /* Darker shade of burgundy on hover */
+}

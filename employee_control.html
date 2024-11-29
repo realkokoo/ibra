@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Control - Marsoliel Admin</title>
+    <link rel="stylesheet" href="employee_control.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script defer src="employee_control.js"></script>
+</head>
+<body>
+    <!-- Top bar with Return Button and Logo -->
+    <div class="top-bar">
+        <a href="admin.html" class="button return-button">Return to Admin Terminal</a>
+
+        <!-- Logo in the center -->
+        <div class="logo">
+            <a href="admin.html">
+                <img src="logo.png" alt="Marsoliel Logo">
+            </a>
+        </div>
+    </div>
+
+    <!-- Employee Control Content -->
+    <div class="control-content">
+        <h1>Employee Control</h1>
+        <p class="control-intro">Add, edit, or remove employees. Provide a username and password to create an employee account.</p>
+
+        <!-- Employee Table -->
+        <table class="employee-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="employee-table-body">
+                <!-- Employee rows will be appended here dynamically by JavaScript -->
+            </tbody>
+        </table>
+
+        <!-- Add Employee Button -->
+        <button id="add-employee" class="button add-employee">Add Employee</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Feedback Review - Marsoliel</title>
+    <link rel="stylesheet" href="feedback.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script defer src="feedback.js"></script>
+</head>
+<body>
+    <!-- Top bar with Return Button and Logo -->
+    <div class="top-bar">
+        <a href="admin.html" class="button return-button">Return to Admin Terminal</a> <!-- Return button to go back to employee.html -->
+
+        <!-- Logo in the center wrapped with a link to employee.html -->
+        <div class="logo">
+            <a href="admin.html">
+                <img src="logo.png" alt="Marsoliel Logo">
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Feedback Content -->
+    <div class="feedback-content">
+        <h1>Admin Feedback Review</h1>
+        <p class="feedback-intro">Manage customer feedback. You can review and delete feedback as needed.</p>
+
+        <!-- Feedback Display Section -->
+        <div id="feedback-list" class="feedback-list">
+            <!-- Feedback messages will be appended here dynamically by JavaScript -->
+        </div>
+
+        <!-- Clear All Feedback Button -->
+        <button id="clear-all" class="button clear-all">Clear All Feedback</button>
+    </div>
+</body>
+</html>
